@@ -1,7 +1,7 @@
 function Header() {
   return (
-    <header className="flex justify-center bg-black">
-      <div className="py-6 font-futurama-bold font-bold text-transparent text-5xl bg-clip-text bg-gradient-to-t from-purple-400 to-pink-600">
+    <header className="flex justify-center bg-stary bg-cover bg-fixed bg-bottom bg-no-repeat">
+      <div className="bg-gradient-to-t from-[#dd5820] to-[#edb92f] bg-clip-text py-8 font-futurama-bold text-5xl font-bold text-transparent">
         FUTURAMA MEMORY GAME
       </div>
     </header>
