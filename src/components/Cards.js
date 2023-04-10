@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Cards() {
+function Cards({ currentScore, setCurrentScore, bestScore, setBestScore }) {
   const futuramaCharacters = [
     {
       id: 1,
@@ -28,8 +28,19 @@ function Cards() {
     shuffleArray(futuramaCharacters)
   );
 
-  function handleClick() {
-    const randomChar = shuffleArray(futuramaCharacters);
+  function handleClick(charId) {
+    const newChars = [...characters];
+    const charClicked = newChars.find((char) => char.id === charId);
+
+    if (charClicked.clicked === true) {
+      setCurrentScore(0);
+      newChars.map((char) => (char.clicked = false));
+    } else {
+      setCurrentScore(currentScore + 1);
+      charClicked.clicked = true;
+    }
+
+    const randomChar = shuffleArray(newChars);
     setCharacters([...randomChar]);
   }
 
@@ -48,13 +59,14 @@ function Card({ character, handleClick }) {
   return (
     <button
       className="flex h-60 w-60 justify-center rounded-xl bg-white shadow-xl"
-      onClick={handleClick}
+      onClick={() => handleClick(character.id)}
     >
       <div>{character.name}</div>
     </button>
   );
 }
 
+// Fisher-Yates (aka Knuth) Shuffle
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

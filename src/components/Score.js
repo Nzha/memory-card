@@ -1,7 +1,8 @@
-function Score() {
+function Score({ currentScore, bestScore }) {
   return (
-    <div className="self-center">
-      <div>Score:</div>
+    <div className="flex gap-20 self-center">
+      <div>Current score: {currentScore}</div>
+      <div>Best score: {bestScore}</div>
     </div>
   );
 }
