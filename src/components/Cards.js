@@ -1,32 +1,9 @@
 import { useState } from 'react';
+import data from '../utilities/data';
+import shuffleArray from '../utilities/utils';
 
 function Cards({ currentScore, setCurrentScore, bestScore, setBestScore }) {
-  const futuramaCharacters = [
-    {
-      id: 1,
-      name: 'Philip J. Fry',
-      avatarUrl: 'https://i.imgur.com/lWAi2sT.png',
-    },
-    {
-      id: 2,
-      name: 'Turanga Leela',
-      avatarUrl: 'https://i.imgur.com/gTK0CAr.png',
-    },
-    {
-      id: 3,
-      name: 'Bender Bending Rodriguez',
-      avatarUrl: 'https://i.imgur.com/c5ebN1S.png',
-    },
-    {
-      id: 4,
-      name: 'Professor Hubert J. Farnsworth',
-      avatarUrl: 'https://i.imgur.com/Ujmyf7E.png',
-    },
-  ];
-
-  const [characters, setCharacters] = useState(
-    shuffleArray(futuramaCharacters)
-  );
+  const [characters, setCharacters] = useState(shuffleArray(data));
 
   function handleClick(charId) {
     const newChars = [...characters];
@@ -65,15 +42,6 @@ function Card({ character, handleClick }) {
       <div>{character.name}</div>
     </button>
   );
-}
-
-// Fisher-Yates (aka Knuth) Shuffle
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
 }
 
 export default Cards;
