@@ -33,6 +33,7 @@ function Cards({ currentScore, setCurrentScore, bestScore, setBestScore }) {
     const charClicked = newChars.find((char) => char.id === charId);
 
     if (charClicked.clicked === true) {
+      if (currentScore > bestScore) setBestScore(currentScore);
       setCurrentScore(0);
       newChars.map((char) => (char.clicked = false));
     } else {
