@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.77026932.css",
+    "main.js": "/memory-card/static/js/main.0357a7a8.js",
+    "static/media/stary-bg.jpg": "/memory-card/static/media/stary-bg.d47b5947432f57712c1d.jpg",
+    "static/media/futurama-bold.ttf": "/memory-card/static/media/futurama-bold.e7dc0e7da5d0b6b85264.ttf",
+    "static/media/futurama-title.ttf": "/memory-card/static/media/futurama-title.70529ff617360eab0da5.ttf",
+    "index.html": "/memory-card/index.html",
+    "main.77026932.css.map": "/memory-card/static/css/main.77026932.css.map",
+    "main.0357a7a8.js.map": "/memory-card/static/js/main.0357a7a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77026932.css",
+    "static/js/main.0357a7a8.js"
+  ]
+}
