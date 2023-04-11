@@ -2,62 +2,62 @@ const data = [
   {
     id: 1,
     name: 'Philip J. Fry',
-    avatarUrl: 'https://i.imgur.com/lWAi2sT.png',
+    avatarUrl: '../assets/avatars/fry.jpg',
   },
   {
     id: 2,
     name: 'Turanga Leela',
-    avatarUrl: 'https://i.imgur.com/gTK0CAr.png',
+    avatarUrl: '../assets/avatars/leela.jpg',
   },
   {
     id: 3,
-    name: 'Bender Bending Rodriguez',
-    avatarUrl: 'https://i.imgur.com/c5ebN1S.png',
+    name: 'Bender Rodriguez',
+    avatarUrl: '../assets/avatars/bender.jpg',
   },
   {
     id: 4,
-    name: 'Professor Hubert J. Farnsworth',
-    avatarUrl: 'https://i.imgur.com/Ujmyf7E.png',
+    name: 'Professor Farnsworth',
+    avatarUrl: '../assets/avatars/farnsworth.jpg',
   },
   {
     id: 5,
     name: 'Zapp Brannigan',
-    avatarUrl: 'https://i.imgur.com/sr0Nuhs.png',
+    avatarUrl: '../assets/avatars/zapp.jpg',
   },
   {
     id: 6,
     name: 'Amy Wong',
-    avatarUrl: 'https://i.imgur.com/OUhkm0Q.png',
+    avatarUrl: '../assets/avatars/amy.jpg',
   },
   {
     id: 7,
     name: 'Hermes Conrad',
-    avatarUrl: 'https://i.imgur.com/qX9hFtR.png',
+    avatarUrl: '../assets/avatars/hermes.png',
   },
   {
     id: 8,
     name: 'Nibbler',
-    avatarUrl: 'https://i.imgur.com/JYZGJcJ.png',
+    avatarUrl: '../assets/avatars/nibbler.jpg',
   },
   {
     id: 9,
     name: 'Kif Kroker',
-    avatarUrl: 'https://i.imgur.com/WkRExrb.png',
+    avatarUrl: '../assets/avatars/kif.jpg',
   },
   {
     id: 10,
     name: 'Calculon',
-    avatarUrl: 'https://i.imgur.com/F4v0Kk1.png',
+    avatarUrl: '../assets/avatars/calculon.jpg',
   },
   {
     id: 11,
-    name: 'Morbo',
-    avatarUrl: 'https://i.imgur.com/KDxGgOT.png',
+    name: 'Scruffy',
+    avatarUrl: '../assets/avatars/scruffy.jpg',
   },
   {
     id: 12,
     name: 'Zoidberg',
-    avatarUrl: 'https://i.imgur.com/2jQYztY.png',
+    avatarUrl: '../assets/avatars/zoidberg.jpg',
   },
 ];
 

@@ -36,10 +36,15 @@ function Cards({ currentScore, setCurrentScore, bestScore, setBestScore }) {
 function Card({ character, handleClick }) {
   return (
     <button
-      className="flex h-60 w-60 justify-center rounded-xl bg-white shadow-xl"
+      className="flex h-60 w-52 flex-col items-center justify-between rounded-xl border border-white bg-white shadow-xl"
       onClick={() => handleClick(character.id)}
     >
-      <div>{character.name}</div>
+      <img
+        src={character.avatarUrl}
+        alt={character.name}
+        className="h-48 w-52 rounded-t-xl"
+      />
+      <div className="px-2 py-2">{character.name}</div>
     </button>
   );
 }
