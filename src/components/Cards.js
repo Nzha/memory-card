@@ -36,7 +36,7 @@ function Cards({ currentScore, setCurrentScore, bestScore, setBestScore }) {
 function Card({ character, handleClick }) {
   return (
     <button
-      className="flex h-60 w-52 flex-col items-center justify-between rounded-xl border border-white bg-white shadow-xl"
+      className="flex h-60 w-52 flex-col items-center justify-between rounded-xl border border-white bg-white shadow-xl transition-transform duration-75 hover:scale-110"
       onClick={() => handleClick(character.id)}
     >
       <img

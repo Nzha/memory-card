@@ -7,7 +7,7 @@ function Main() {
   const [bestScore, setBestScore] = useState(0);
 
   return (
-    <div className="flex flex-col gap-8 bg-[#7bd0f5] py-8">
+    <div className="flex flex-col gap-10 bg-[#7bd0f5] py-8">
       <Score currentScore={currentScore} bestScore={bestScore} />
       <Cards
         currentScore={currentScore}
